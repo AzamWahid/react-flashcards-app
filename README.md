@@ -1,12 +1,53 @@
-# React + Vite
+# 📚 React Flashcards App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and interactive flashcard app built with **React.js** for learning and practice. This project features a clean UI, flip-on-hover animation, and mobile responsiveness — making it ideal for any kind of flashcard-based learning or React component practice.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Live Demo
 
-## Expanding the ESLint configuration
+🌐 [View the App](https://flashcard-react-azam.netlify.app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📂 GitHub Repository
+
+🔗 [GitHub Repo](https://github.com/AzamWahid/react-flashcards-app)
+
+---
+
+## ✨ Features
+
+- 🔁 Flip cards on hover to reveal content
+- 🎨 Beautiful and modern design
+- 📱 Fully responsive for all screen sizes
+- 🧩 Easily customizable content
+- ⚛️ Perfect for practicing React fundamentals
+
+---
+
+## 🛠️ Tech Stack
+
+- React.js (Functional Components)
+- CSS Flexbox & Media Queries
+- Google Fonts (`Outfit`)
+- Netlify for Deployment
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally:
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/AzamWahid/react-flashcards-app.git
+
+# 2. Navigate to the project directory
+cd react-flashcards-app
+
+# 3. Install dependencies
+npm install
+
+# 4. Start the development server
+npm run dev  # or npm start depending on your setup
