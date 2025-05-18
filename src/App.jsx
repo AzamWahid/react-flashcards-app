@@ -67,7 +67,7 @@ function App() {
 
       </div>
       <footer className="app-footer">
-        Made with ❤️ using React | @YourName
+        Made with ❤️ using React | @Muhammad Azam
       </footer>
     </>
   )
