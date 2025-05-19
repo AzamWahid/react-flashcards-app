@@ -71,6 +71,7 @@ function App() {
         display: 'flex',
         // flexDirection: 'column', // One card per line
         alignItems: 'center',    // Center horizontally
+        justifyContent: 'center',
         // gap: '1rem',             // Space between cards
         // padding: '1rem',
         flexWrap: "wrap",
