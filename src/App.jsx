@@ -1,9 +1,16 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import Flashcard from './FlashCard';
 
 
 function App() {
+
+    useEffect(() => {
+    // Force light background and text color
+    document.body.style.backgroundColor = '#edf2f7';
+    document.body.style.colorScheme = 'light';
+    document.body.style.color = '#2d3748'; // Dark text for light background
+  }, []);
 
   const cards = [
     {
