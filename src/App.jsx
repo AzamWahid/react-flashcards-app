@@ -5,11 +5,21 @@ import Flashcard from './FlashCard';
 
 function App() {
 
-    useEffect(() => {
+  const [questionData, setQuestionData] = useState([])
+
+  const fetchQuestion = async () => {
+    const quesData = await fetch('https://the-trivia-api.com/v2/questions/');
+    const quesDataJson = await quesData.json();
+    setQuestionData(quesDataJson);
+    console.log(quesDataJson);
+  }
+
+  useEffect(() => {
     // Force light background and text color
     document.body.style.backgroundColor = '#edf2f7';
     document.body.style.colorScheme = 'light';
     document.body.style.color = '#2d3748'; // Dark text for light background
+    fetchQuestion();
   }, []);
 
   const cards = [
@@ -54,7 +64,7 @@ function App() {
   return (
     <>
       <div className="app-header">
-        <h1>📚 State Capitals Flashcards</h1>
+        <h1>📚 REACT Flashcards</h1>
         <p>Hover on a card to reveal the answer</p>
       </div>
       <div style={{
@@ -68,8 +78,8 @@ function App() {
       }}>
         {
 
-          cards.map((card, idx) =>
-            <Flashcard key={idx} frontContent={card.front} backContent={card.back} />
+          questionData.map((question, idx) =>
+            <Flashcard key={idx} frontContent={question.question.text} backContent={question.correctAnswer} />
           )}
 
       </div>
